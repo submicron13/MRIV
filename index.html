@@ -26,7 +26,8 @@
     </header>
     <main class="container">
       <div class="jumbotron">
-        <h4>
+        <h2 class="mriv-title">MRIV - Mars Rover Image Viewer</h2>
+        <h4 class="mriv-description">
           An image viewer that retrieves data from the hundreds of thousands
           images that NASA rovers Curiosity, Spirit, and Opportunity took on
           their respective missions
@@ -34,7 +35,7 @@
       </div>
       <div>
         <p class="lead align-center">
-                <a class="btn btn-success btn-lg btn-block" href="#" role="button">Enter The Viewer</a>
+                <a class="btn btn-success btn-lg btn-block" href="./main" role="button">Enter The Viewer</a>
         </p>
       </div>
     </main>
@@ -46,7 +47,11 @@
     font-family: "Roboto Mono", monospace;
   }
   .mriv-heading {
+    text-align:center;
     font-size: 5rem;
   }
-  h1 {text-align:center;}
+  .mriv-title {text-align:center;}
+  .mriv-description {
+  text-align: justify;
+  }
 </style>
