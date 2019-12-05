@@ -1,10 +1,10 @@
 # Project Name / Title
 
-> Martian Weather Center
+> MRIV - Martian Rover Image Viewer
 
 ## 2 - 3 Sentence Project Description (Elevator Pitch)
 
-> A simple website to get the current forcast for the weather on mars
+> A simple website to get images from the nasa image api
 
 ## What is your motivation for creating this project?
 
@@ -16,7 +16,9 @@
 
 ## What 3rd Party API(s) will you integrate with?
 
-* https://api.nasa.gov/assets/insight/InSight%20Weather%20API%20Documentation.pdf
+* https://api.nasa.gov/mars-photos/api/v1/
+* Possibly add weather
+  > https://api.nasa.gov/assets/insight/InSight%20Weather%20API%20Documentation.pdf
 
 ## Tech Stack
 
