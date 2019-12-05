@@ -4,7 +4,7 @@
 
 ## 2 - 3 Sentence Project Description (Elevator Pitch)
 
-> A simple website to get images from the nasa image api
+> A simple website random image viewer from the different mars rovers. 
 
 ## What is your motivation for creating this project?
 
