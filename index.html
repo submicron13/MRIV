@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="mriv-html" lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -7,7 +7,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -17,7 +16,6 @@
       href="https://fonts.googleapis.com/css?family=Roboto+Mono:300&display=swap"
       rel="stylesheet"
     />
-
     <title>MRIV</title>
   </head>
   <body>
@@ -25,7 +23,7 @@
       <h1 class="mriv-heading">Welcome to MRIV</h1>
     </header>
     <main class="container">
-      <div class="jumbotron">
+      <div class="jumbotron mriv-jumbo">
         <h2 class="mriv-title">MRIV - Mars Rover Image Viewer</h2>
         <h4 class="mriv-description">
           An image viewer that retrieves data from the hundreds of thousands
@@ -43,9 +41,21 @@
 </html>
 
 <style>
-  body {
-    font-family: "Roboto Mono", monospace;
-  }
+
+.mriv-html { 
+  background: url(images/starman.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+background-color: transparent;
+font-family: "Roboto Mono", monospace;
+}
+.mriv-jumbo {
+    background-color: rgba(48, 48, 48, 0.7);
+}
   .mriv-heading {
     text-align:center;
     font-size: 5rem;
