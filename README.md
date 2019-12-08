@@ -11,7 +11,7 @@ A simple Vanilla JS that pulls data from the NASA Api
 * [ ] Use select boxes to choose a camera
 * [ ] Change image to random image using those selections
   * [ ] Update mission data based on selection
-
+* [ ] Deploy to zeit
 
 # Things to learn
 
