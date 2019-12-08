@@ -1,11 +1,12 @@
 # MRIV - Martian rover image viewer
 A simple Vanilla JS that pulls data from the NASA Api
 
-* [ ] Pull Manifest (mission) data to get the max sol
-* [ ] Pick a random rover
-* [ ] Pick a random sol to find an image
-* [ ] Pick a random camera from rover
-* [ ] Place image on page.
+* [x] Pull Manifest (mission) data to get the max sol
+* [x] Pick a random rover
+* [x] Pick a random sol to find an image
+* [] Pick a random camera from rover
+* [x] Place image on page.
+* [ ] Add loading image
 * [ ] Use select boxes to choose a rover
 * [ ] Use select boxes to choose a camera
 * [ ] Change image to random image using those selections
@@ -20,6 +21,6 @@ A simple Vanilla JS that pulls data from the NASA Api
 
 # ToDo 
 
-* [ ] Add elon musk spaceman to landing page as background
+* [x] Add elon musk spaceman to landing page as background
 * [ ] Add weather information for given Sol
 

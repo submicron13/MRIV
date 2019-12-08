@@ -23,15 +23,15 @@
       <h1 class="mriv-heading">MRIV</h1>
     </header>
     <main class="container">
-      <div class="jumbotron"></div>
-      <div class="jumbotron">
-        <div class="mriv-container">
-            <div id="mriv-viewer" class="card mriv-card border-success">
+      <div class="jumbotron mriv-view-container">
+            <section id="mriv-viewer" class="col eighty image">
+            </section>
+            <section id="mriv-manifest" class="col twenty manifest card mriv-card border-success">
                 <b> Mission Data </b><br>
-            </div>
-        </div>
+            </section>
+      </div>
 <br>
-        <h5>Which Rover?</h5>
+        <!-- <h5>Which Rover?</h5>
         <select class="custom-select">
           <option value="curiosity">Curiosity</option>
           <option value="opportunity">Opportunity</option>
@@ -43,7 +43,7 @@
           <option value="saab">Saab</option>
           <option value="mercedes">Mercedes</option>
           <option value="audi">Audi</option>
-        </select>
+        </select> -->
       </div>
     </main>
     <script type="text/javascript" src="./main.js"></script>
@@ -72,5 +72,49 @@
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
+  }
+  .image {
+      column-count: 3;
+  }
+  .manifest {
+      padding: 5px;
+  }
+  img{
+  width: 100%;
+  padding: 5px;
+  }
+  .mriv-view-container{
+    width: 100%;
+    overflow: auto;
+  }
+  .col {
+    float: left;
+  }
+  .eighty {
+    width: 80%;
+  }
+  .twenty {
+    width: 20%;
+  }
+  .image-div { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+   }
+  h2 { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+    }
+  h2 span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+    }
+  h2 span.spacer {
+   padding:5px 15px;
   }
 </style>
