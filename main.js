@@ -1,11 +1,13 @@
 let allImages = [];
 let API_KEY = "DEMO_KEY";
+const loadingImage = document.querySelector('#loadingImage');
+
 function mrivControl(params) {
   //our control loop function
   let roverArray = ["curiosity", "opportunity", "spirit"];
   // Pick our rover
   let roverRandom = mrivRandom(3);
-  if(roverRandom > 2) {
+  if (roverRandom > 2) {
     roverRandom = 2;
   }
   let rover = roverArray[roverRandom];
@@ -17,7 +19,7 @@ function mrivControl(params) {
       // get the manifest data about that rover, and feedback our max_sol
       max_sol = mrivGetManifest(jsonReady);
     })
-    .then( () => {
+    .then(() => {
       // now pick a random image number using max sol as a seed
       let imageToPlace = mrivRandom(max_sol);
       let postPendConcat = "/photos?sol=" + imageToPlace + "&api_key=";
@@ -29,16 +31,24 @@ function mrivControl(params) {
           //<h2><span>A Movie in the Park:<span class='spacer'></span><br /><span class='spacer'></span>Kung Fu Panda</span></h2>
           // console.log('PHOTO:', pictureReady.photos[randomImageFromSol]);
           let div = document.getElementById("mriv-viewer");
+          console.log(pictureReady.photos);
           pictureReady.photos.forEach(image => {
+            div.innerHTML =
+              div.innerHTML +
+              '<div class="mriv-card card border-success mriv-nobreak"><img src="' +
+              image.img_src +
+              '"><p class="card-text">Camera: ' + image.camera.full_name + '</p></div>';
             //div.innerHTML = div.innerHTML + '<div class="image-div">';
             // div.innerHTML = '<h2><span class="spacer">this</span></h2>';
-            let img = document.createElement('img'); 
-            img.src = image.img_src;
-            div.appendChild(img);
+            // let img = document.createElement("img");
+            // img.src = image.img_src;
+            // div.appendChild(img);
             // div.innerHTML = div.innerHTML + '</div>';
           });
         }
       );
+    }).then(() => {
+        loadingImage.style.display = 'none';
     });
 }
 

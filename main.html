@@ -24,6 +24,7 @@
     </header>
     <main class="container">
       <div class="jumbotron mriv-view-container">
+            <img id="loadingImage" src="https://i.imgur.com/JFM9A85.gif">
             <section id="mriv-viewer" class="col eighty image">
             </section>
             <section id="mriv-manifest" class="col twenty manifest card mriv-card border-success">
@@ -72,6 +73,7 @@
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
+  margin-bottom: 5px;
   }
   .image {
       column-count: 3;
@@ -82,11 +84,17 @@
   img{
   width: 100%;
   padding: 5px;
+  border-radius: 0.6rem;
   }
   .mriv-view-container{
     width: 100%;
     overflow: auto;
   }
+  .mriv-nobreak{
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    }
   .col {
     float: left;
   }
